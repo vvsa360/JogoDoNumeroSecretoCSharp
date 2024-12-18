@@ -1,18 +1,10 @@
-﻿using System;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Cria uma instância de Random
-        Random random = new Random();
-
-        // Gera um número aleatório entre 1 e 100 (inclusive)
-        int numeroAleatorio = random.Next(1, 101);
+        // Cria o numero secreto
+        Random numeroSecreto = new Random();
+        int numeroAleatorio = numeroSecreto.Next(1, 101);
 
         Console.WriteLine("Tente adivinhar o número gerado (entre 1 e 100):");
 
-        // Loop para o jogador tentar adivinhar
+        // Input do Jogador
         while (true)
         {
             // Lê a entrada do usuário
@@ -42,5 +34,3 @@ class Program
                 Console.WriteLine("Resposta inválida. Por favor, insira um número inteiro entre 1 a 100.");
             }
         }
-    }
-}
